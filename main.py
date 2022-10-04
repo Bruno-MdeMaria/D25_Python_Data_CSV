@@ -26,6 +26,9 @@ print(temp_list)
 #NO PANDAS:
 print(data["temp"].mean())
 
+#MAIOR TEMPERATURA:
+print(data["temp"].max())
+
 
 
            
