@@ -1,4 +1,5 @@
-
+import csv
 with open("weather_data.csv") as data_value:
-    data = data_value.readlines()
-print(data)
+    data = csv.reader(data_value)
+    for linha in data:
+        print(linha)
