@@ -13,7 +13,19 @@ import pandas
 data = pandas.read_csv("weather_data.csv")
 
 data_dicio = data.to_dict()  #tranforma um DATAFRAME(planilha) em um dicionario.
-data_list = data["temp"].to_list #transforma uma SERIES(coluna) em lista.
+temp_list = data["temp"].to_list() #transforma uma SERIES(coluna) em lista.
+print(temp_list)
+
+#VERIFICAR TEMPERATURA MÉDIA:
+# soma = 0
+# for temp in temp_list:
+#     soma += temp
+# media = soma / len(temp_list)
+# print(media)
+
+#NO PANDAS:
+print(data["temp"].mean())
+
 
 
            
