@@ -7,9 +7,13 @@
 #         temperaturas.append(int(linha[1]))
 #     print(temperaturas)
 
-import pandas
+#COM A BLIBLIOTECA PANDAS:
 
+import pandas
 data = pandas.read_csv("weather_data.csv")
-print(data)
+
+data_dicio = data.to_dict()  #tranforma um DATAFRAME(planilha) em um dicionario.
+data_list = data["temp"].to_list #transforma uma SERIES(coluna) em lista.
+
 
            
