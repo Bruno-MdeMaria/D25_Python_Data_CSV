@@ -45,4 +45,14 @@ monday_temp = int(monday.temp)
 monday_temp_f = monday_temp * 9/5 +32
 print(monday_temp_f)
 
-           
+#CRIANDO UMA DATAFRAME DE UM DICIONARIO:
+
+data_dicio = {
+    "students": ["Benjamim", "Pricila", "Bruno"],
+    "scores" : [78, 53, 65]
+}  
+
+data_novo = pandas.DataFrame(data_dicio)
+print(data_novo)
+#CRIAR UM ARQUIVO CSV:
+data_novo.to_csv("students_data.csv")
