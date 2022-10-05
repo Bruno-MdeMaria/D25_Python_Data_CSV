@@ -36,6 +36,13 @@ print(data[data.temp == max])
 #outra forma:
 print(data[data.temp == data.temp.max()])
 
+#TRANFORMAR TODA A LINHA EM VARIAVEL:
+monday = data[data.day == "Monday"]
+print(monday.condition)
 
+#TRANFORMAR DE C° PARA F°:
+monday_temp = int(monday.temp)
+monday_temp_f = monday_temp * 9/5 +32
+print(monday_temp_f)
 
            
