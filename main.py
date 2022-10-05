@@ -27,7 +27,14 @@ print(temp_list)
 print(data["temp"].mean())
 
 #MAIOR TEMPERATURA:
-print(data["temp"].max())
+print(data["temp"].max())   #forma de chamar uma coluna e enontrar o valor máximo da mesma.
+print(data.temp.max())   #forma de chamar uma coluna... tratado ela como um atributo de um objeto.
+
+#LINHA ONDE A MAIOR TEMPERATUDA SE ENCONTRA:
+max = data.temp.max()         
+print(data[data.temp == max])
+#outra forma:
+print(data[data.temp == data.temp.max()])
 
 
 
