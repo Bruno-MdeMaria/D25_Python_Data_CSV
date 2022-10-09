@@ -55,4 +55,4 @@ data_dicio = {
 data_novo = pandas.DataFrame(data_dicio)
 print(data_novo)
 #CRIAR UM ARQUIVO CSV:
-data_novo.to_csv("students_data.csv")
+data_novo.to_csv("students_data.csv")   
